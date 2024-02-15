@@ -1,0 +1,155 @@
+footer {
+    color: #fff; 
+    padding: 20px;
+    background-image: url(../Assets/Images/bg.jpg);
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  
+  .footer-card{
+    flex: 1; 
+    text-align: center;
+    display: grid;
+    gap: 30px;
+  }
+  .footer-card h2{
+    font-size: 3rem;
+    
+  }
+  .footer-card1 {
+    flex: 1; 
+    text-align: center;
+    /* border: 2px solid rgb(226, 226, 226); */
+    height: 270px;
+    max-width: 330px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius:60%;
+    background: #022f34;
+        margin-top: 20px;
+    transition: all 0.4s ease-out;
+    cursor: pointer;
+    box-shadow:0 10px  0 5px  #080e3a;
+    
+    
+    
+  }
+  .footer-card1:hover{
+    transform: scale(1.05);
+  }
+ 
+  .footer-card1 img {
+    max-width: 65%;
+    height: auto;
+    position: absolute;
+  }
+  .card1-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid; */
+    gap: 10px;
+  }
+  
+  .btn1 button {
+    font-size: 12px;
+    width: 135px;
+    height: 40px;
+    color: white;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease-out;
+    background: #1f2235;
+    border: 1px solid aliceblue;
+    cursor: pointer;
+    
+    
+  }
+  .btn1{
+    display: flex;
+    gap: 20px;
+    
+  }
+  
+  
+  .btn1 button:hover {
+    background: aliceblue;
+    color: rgb(0, 0, 0);
+    border: 2px solid aliceblue;
+    transform: scale(1.1);
+  
+  }
+  
+  .footer-card2{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: -10px;
+  }
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: -10px;
+  }
+  
+  .contact-item i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .contact-item p {
+    margin: 0;
+  }
+  .contact-item p img{
+    height: 25px;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+  }
+  .contact-item img:hover{
+    transform: scale(1.7) rotate(360deg);
+  }
+  
+  .footer-card1 p {
+    margin: 5px;
+  }
+  
+  
+  .copy-right {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .copy-right p{
+    font-size: 20px;
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .footer-content {
+      flex-direction: column; 
+      align-items: stretch;
+    }
+  
+    .footer-card,
+    .footer-card1 {
+      flex: auto; 
+      margin-bottom: 10px;
+    }
+    .footer-card h2{
+      font-size: 30px;
+    }
+    .copy-right p{
+      font-size: 15px;
+    }
+  }
+  

@@ -1,0 +1,113 @@
+.myskills-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px;
+    background: #3A4151;
+    user-select: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.skills-container1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    margin-bottom: 5px;
+}
+.skills-container1 h2{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+.skills-container1 p{
+    color: aliceblue;
+    font-weight: 300;
+    line-height: -10px;
+    font-family: 'Poppins';
+    
+}
+.skills-container1 img{
+    max-height: 300px;
+    max-width: 260px;
+    border-radius: 50%;
+    box-shadow: 0 10px 0 5px #151920;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    object-fit: cover;
+
+}
+.skills-container1 img:hover{
+    box-shadow: 0 10px 0 5px #ffffff;
+    transform: scale(1.04);
+    background-image: url(../Assets/Images/star_sky.jpg);   
+}
+.skils-container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding:8px;
+    margin: 10px;
+}
+.skill{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 200px;
+    height: 130px;
+    gap: -10px;
+    padding: 3px;
+    background: #022F34;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 5px 0 2px #000000;
+    transition: all 0.4s ease-out;
+}
+.skill:hover{
+    box-shadow: 0 5px 0 2px #2d0269;
+    transform: scale(1.04);
+    background:#B6273F;
+    
+}
+.skill img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-image: url(../Assets/Images/bg.jpg);
+}
+.skill p{
+    font-size: 12px;
+    text-align: center;
+    color: #FCFDFD;
+}
+@media only screen and (max-width: 768px) {
+
+    .myskills-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .skills-container1 {
+        padding: 15px; /* Adjust padding for smaller screens */
+       
+    }
+
+    .skills-container1 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .skill {
+        max-width: 100%;
+    }
+}

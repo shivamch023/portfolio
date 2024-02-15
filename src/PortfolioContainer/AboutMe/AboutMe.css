@@ -1,0 +1,160 @@
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .h2 {
+    font-size: 41px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    letter-spacing: 4px;
+  }
+  
+  .image-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px; /* Reduce the gap for smaller screens */
+    align-items: center;
+    justify-content: center;
+    max-width: 100%; /* Adjust for responsiveness */
+  }
+  
+  .image {
+    flex: 1;
+    max-width: 95%; /* Adjust for responsiveness */
+    box-shadow: 2px 1px 5px 3px black;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    background: aliceblue;
+  }
+  
+  .image img {
+    width: 95%;
+    height: auto;
+    border-radius: 3px;
+    object-fit: cover;
+    background-image: url(../Assets/Images/wall.jpg);
+  }
+  
+  .details {
+    flex: 2;
+    max-width: 100%; /* Adjust for responsiveness */
+    gap: 20px; /* Adjust the gap for smaller screens */
+    padding-bottom: 60px;
+  }
+  
+  .h3-text {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .h3-text span {
+    color: rgb(172, 9, 36);
+  }
+  
+  .p-text {
+    margin-bottom: 20px;
+  }
+  
+  .bio-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap for smaller screens */
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: -20px;
+  }
+  
+  .bio1 img,
+  .bio2 img {
+    height: 20px;
+  }
+  
+  .bio1,
+  .bio2 {
+    flex: 1;
+  }
+  
+  .bio1-col,
+  .bio2-col {
+    flex: 1;
+    margin-bottom: 15px;
+  }
+  
+  .bio1-col,
+  .bio2-col {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  span{
+    font-weight: bold;
+  }
+  
+  .btn-cv {
+    margin-top: 20px;
+    
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 20px;
+    background: #1f2235;
+    border-radius: 15px;
+    border: 3px solid rgb(255, 0, 0);
+    color: aliceblue;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  button:hover{
+    background: aliceblue;
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 600px) {
+    .image-details {
+      gap: 20px; /* Further reduce the gap for smaller screens */
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .image,
+    .details {
+      flex: 1;
+      max-width: 100%;
+    }
+  
+    .bio-details {
+      gap: -10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; 
+      flex-wrap: wrap;
+    }
+    .bio2{
+      padding-right: 40px;
+    }
+    .btn-cv {
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      
+    }
+    .btn-cv button{
+           width: 400px;
+    }
+    span{
+      font-weight: bold;
+    }
+  }
+  

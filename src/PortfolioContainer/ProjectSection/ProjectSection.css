@@ -1,0 +1,125 @@
+.project-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px;
+    gap: 6px;
+    background: #3A4151;
+    padding-bottom: 10px;
+}
+.section-header h2{
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: rgb(251, 251, 251);
+}
+.project-section-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px;
+    
+    
+}
+
+.image-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 500px;
+    height: 240px;
+    border-radius: 6px;
+    background: #022F34;
+}
+
+.image-section img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.project-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    max-height: 500px;
+    width: 700px;
+    gap: -10px;
+    background: #022F34;
+    padding-left: 15px;
+    padding-right: 10px;
+    user-select: none;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    
+}
+.project-details h3{
+    font-size: 23px;
+    color: aliceblue;
+    font-family: 'Poppins';
+
+}
+.project-details p{
+    color: aliceblue;
+    font-weight: 500;
+}
+.skillname-text{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.skill-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+}
+.skill-1 h5{
+    color: rgb(241, 240, 240);
+    font-weight: 500;
+    background: #322525;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;    
+    border-radius: 10px;
+}
+.btn-project{
+    display: flex;
+    gap: 20px;
+}
+.btn-project button{
+    background: #3C4152;
+    border: 1px solid aliceblue;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    width: 140px;
+    border-radius: 30px;
+}
+.btn-project button:hover{
+    background: aliceblue;
+    border: 1px solid;
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 600px) {
+    .project-section-card,
+    .image-section,
+    .project-details {
+        width: 95%;
+    }
+
+    .project-section-card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

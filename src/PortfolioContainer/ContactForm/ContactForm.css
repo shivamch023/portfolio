@@ -1,0 +1,259 @@
+.total-container{
+   display: grid;
+   text-align: center;
+   padding-bottom: 40px;
+   background: url(../Assets/Images/bg.jpg);
+   /* height: 80vh; */
+   flex-wrap: wrap;
+   margin: 10px;
+}
+.total-container h2{
+    font-size: 4rem;
+    color: aliceblue;
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+    flex-wrap: wrap;
+    
+
+    
+  
+    
+}
+
+.card-inner {
+    width: 400px;
+    height: 400px;
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+    background: rgb(1, 40, 40);
+    display: grid;
+    align-items: center;
+    justify-content: start;
+   
+    
+    
+}
+
+
+.card-inner .user-box {
+    position: relative;
+    margin: 20px;
+    
+    
+}
+
+.card-inner .user-box input {
+    width: 80%;
+    padding: 12px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    background: transparent;
+    margin-left: 2.3rem;
+    font: bold;
+    padding-left: 0.4rem;
+    
+}
+
+.card-inner .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #fff;
+    pointer-events: none;
+    transition: all .5s;
+    margin-left: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding-left: 0.3rem;
+}
+
+.card-inner .user-box input:focus~label,
+.card-inner .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #0efde9;
+    font-size: 14px;
+}
+
+.card-inner form button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 60px;
+    color: rgb(219, 230, 230);
+    font-size: 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all .5s;
+    margin-top: 30px;
+    margin-left: 3.5rem;
+    letter-spacing: 6px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(8, 39, 38);
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.card-inner button:hover {
+    background: rgb(0, 255, 234);
+    color: rgb(34, 7, 7);
+    border-radius: 8px;
+    box-shadow: 0 0 2px rgb(68, 248, 254), 0 0 10px rgb(24, 189, 189), 0 0 30px rgb(26, 199, 205), 0 0 50px rgb(20, 224, 193);
+    border: none;
+}
+
+.card-inner button span {
+    position: absolute;
+    display: block;
+    flex-wrap: wrap;
+}
+
+.card-inner button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn 2s linear infinite;
+}
+
+@keyframes btn {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.card-inner button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn2 2s linear infinite;
+    animation-delay: .25s;
+    /* background: linear-gradient(90deg, transparent, #f1231c, rgb(56, 163, 6)); */
+}
+
+@keyframes btn2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.card-inner button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn3 2s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.card-inner button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn4 2s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes btn4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+.contact-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 410px;
+    width: 500px;
+    border-radius:30% 20% 50%;
+    box-shadow:0 20px  0 5px  #080e3a;
+    background: #022f34;
+    flex-wrap: wrap;
+      
+    
+    
+}
+.contact-image img{
+    height: 590px;
+    margin-top: -80px;
+}
+.contact-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 410px;
+    width: 500px;
+    border-radius: 30% 20% 50%;
+    box-shadow: 0 20px 0 5px #080e3a;
+    background: #022f34;
+    flex-wrap: wrap;
+}
+
+.contact-image img {
+    height: 550px;
+    margin-top: -80px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .contact-image {
+        display: none;
+        width: 80%; 
+        border-radius: 20%; 
+    }
+
+  
+}
+@media only screen and (max-width: 768px) {
+    .total-container{
+        margin: 0 10px;
+    }
+    .contact-image {
+      display: none;
+      
+    }
+    .card-inner{
+        width: 100%;
+    }
+
+  
+}
+
